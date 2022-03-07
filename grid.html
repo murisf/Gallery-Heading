@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery-Grid</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(var(--num-cols), 1fr);
+            grid-auto-rows: var(--rov-height);
+            gap: var(--gap);
+        }
+
+        @media screen and (min-width: 767px) and (max-width: 1023px) {
+            #grid {
+                --num-cols: 3;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #grid {
+                --num-cols: 1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Gallery Heading</h1>
+    
+    <div id="grid">
+        <div id="1" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="2" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="3" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="4" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="5" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="6" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="7" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="8" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="9" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="10" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quae ratione accusantium consequatur architecto nobis, odio beatae explicabo perferendis, distinctio aspernatur quisquam ea esse quos pariatur mollitia eaque omnis aliquid.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quae ratione accusantium consequatur architecto nobis, odio beatae explicabo perferendis, distinctio aspernatur quisquam ea esse quos pariatur mollitia eaque omnis aliquid.</p>
+
+</body>
+
+</html>
